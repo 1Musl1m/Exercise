@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { reactive } from "vue";
 import { useStore } from "vuex";
-import { State, Exercise } from "../../store/index";
+import type { State, Exercise } from "../../types/Exercise";
 
 const store = useStore<State>();
 const exercises = store.state.exercises;
